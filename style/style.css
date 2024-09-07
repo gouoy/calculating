@@ -1,0 +1,89 @@
+@import url(general.css);
+@import url(font.css);
+
+header{
+    height:10vh;
+    font-size: 15rem;
+    margin:0 auto;
+    text-align: center;
+}
+header span{
+    color: crimson
+}
+main{
+    background-color: rgba(112, 180, 107, .7);
+    z-index: 1;
+    height:80vh;
+    position:relative;
+    border-radius:10%;
+
+}
+#machine{
+    position: absolute;
+    width: 500px;
+    height: 550px;
+    background-color:#444;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+    box-shadow:5px 10px 40px rgb(33, 33, 33);
+}
+.grid-container{
+  margin: auto;
+  width:80%;
+  display:grid; 
+  grid-template-columns: repeat(4, 1fr) ;
+  column-gap:10px;
+  row-gap:10px;
+}
+
+#result{
+font-size:20px;
+text-align:center;
+background-color: #ded5d5; 
+width:80%;
+line-height:80px;
+height: 80px;
+margin: 20px auto 10px;
+}
+form{
+    margin: 10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#machine input{
+ width:70%;
+ height:40px;
+ margin:0 10px 0 0;
+ text-align: center;
+
+}
+#machine button{
+    height:40px;
+    width:10%;
+    background-color: burlywood;
+}
+.grid-item{
+    padding:9px 10px 10px;
+    text-align:center;
+    line-height: 25.5px;
+    background-color: #ded5d5;
+    transition:.4s;
+    cursor:pointer;
+}
+.grid-item:hover{
+    background-color: darkorange;
+}
+
+
+
+
+
+/* 
+더하기, 빼기, 곱하기, 나누기 
+하나씩 지우기  (back) arrow 
+모든 입력 초기화 하기 (reset btn) 
+
+*/
